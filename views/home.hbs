@@ -1,0 +1,34 @@
+<div class="container">
+    <h1 class="text-center">Ingresar Productos</h1>
+    <div class="row">
+
+
+        <form action="/api/productos/guardar" method="post">
+            <div class="form-group col-8">
+                <label for="formGroupExampleInput">Titulo</label>
+                <input type="text" name="title" class="form-control" id="formGroupExampleInput"
+                    placeholder="Example input">
+            </div>
+            <div class="form-group">
+                <label for="formGroupExampleInput2">Precio</label>
+                <input type="number" name="price" class="form-control" id="formGroupExampleInput2"
+                    placeholder="Another input">
+            </div>
+            <div class="form-group">
+                <label for="formGroupExampleInput2">URL imagen</label>
+                <input type="text" name="thumbnail" class="form-control" id="formGroupExampleInput2"
+                    placeholder="Another input">
+            </div>
+            <input type="submit" class="btn btn-primary btn-block" value="Enviar">
+        </form>
+    </div>
+
+    <div class="row">
+        <br>
+        <br>
+        <div class="alert alert-warning text-center " role="alert">
+            No existen productos cargados
+        </div>
+    </div>
+
+</div>
